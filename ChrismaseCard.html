@@ -1,0 +1,1010 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>group project</title>
+<link rel="icon" href="sources/icon.ico"/>
+<script type="text/javascript" src="scripts/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="scripts/jarallax-0.2.4.js"></script>
+
+<style type="text/css">
+
+body {
+	width:1366px;
+	height: 3840px;
+	margin: 0;
+	overflow-X:hidden;
+}
+
+#btn1{
+	background:url(sources/btn.png);
+	width: 15px;
+	height:15px;
+	position:fixed;
+	left:1330px;
+	top:316.5px;
+	opacity:0.5;
+	z-index:120;
+}
+#btn2{
+	background:url(sources/btn.png);
+	width: 15px;
+	height:15px;
+	position:fixed;
+	left:1330px;
+    top:346.5px;
+	opacity:0.5;
+	z-index:120;
+}
+#btn3{
+	background:url(sources/btn.png);
+	width: 15px;
+	height:15px;
+	position:fixed;
+	left:1330px;
+	top:376.5px;
+	opacity:0.5;
+	z-index:120;
+}
+#btn4{
+	background:url(sources/btn.png);
+	width: 15px;
+	height:15px;
+	position:fixed;
+	left:1330px;
+	top:406.5px;
+	opacity:0.5;
+	z-index:120;
+}
+
+#btn5{
+	background:url(sources/btn.png);
+	width: 15px;
+	height:15px;
+	position:fixed;
+	left:1330px;
+	top:436.5px;
+	opacity:0.5;
+	z-index:120;
+}
+#btn6{
+	background:url(sources/btn.png);
+	width: 15px;
+	height:15px;
+	position:fixed;
+	left:1330px;
+	top:316.5px;
+	opacity:1;
+	z-index:119;
+}
+#btn7{
+	background:url(sources/btn.png);
+	width: 15px;
+	height:15px;
+	position:fixed;
+	left:1330px;
+    top:346.5px;
+	opacity:0;
+	z-index:119;
+}
+#btn8{
+	background:url(sources/btn.png);
+	width: 15px;
+	height:15px;
+	position:fixed;
+	left:1330px;
+	top:376.5px;
+	opacity:0;
+	z-index:119;
+}
+#btn9{
+	background:url(sources/btn.png);
+	width: 15px;
+	height:15px;
+	position:fixed;
+	left:1330px;
+	top:406.5px;
+	opacity:0;
+	z-index:119;
+}
+
+#btn10{
+	background:url(sources/btn.png);
+	width: 15px;
+	height:15px;
+	position:fixed;
+	left:1330px;
+	top:436.5px;
+	opacity:0;
+	z-index:119;
+}
+
+p {
+	font-family:"Helvetica";
+	font-size: 12pt;
+	font-weight: lighter;
+	text-align:center;
+	letter-spacing: 2px;
+	color: #ffffff;
+}
+
+#snow2 { 
+	background:url(sources/snow.gif);
+	width:1366px;
+	height: 768px;
+	position: fixed;
+	margin-left:-683px;
+	top:0%;
+	left:50%;
+	z-index:110;
+}
+
+#bell1{
+	position:fixed;
+	background-image: url(sources/bell_2_1-59.png);
+	width:212px;
+	height:182px;
+	left:5%;
+	top:20px;
+	z-index:110;
+	opacity:0;
+	animation: bellanimation_2_-59 2s steps(59) infinite;
+}
+#bell2{
+	position:fixed;
+	background-image: url(sources/bell_2_2-59.png);
+	width:212px;
+	height:182px;
+	left:20%;
+	top:150px;
+	opacity:0;
+	z-index:110;
+	animation: bellanimation_2_2-59 2s steps(59) infinite;
+}
+#bell3{
+	position:fixed;
+	background-image: url(sources/bell_1_42.png);
+	width:153px;
+	height:208px;
+	left:0%;
+	top:250px;
+	opacity:0;
+	z-index:110;
+	animation: bellanimation_1_42 2s steps(42) infinite;
+}
+#bell4{
+	position:fixed;
+	background-image: url(sources/bell_2_36.png);
+	width:212px;
+	height:182px;
+	left:15%;
+	top:400px;
+	opacity:0;
+	z-index:110;
+	animation: bellanimation_2_36 2s steps(36) infinite;
+}
+#bell5{
+	position:fixed;
+	background-image: url(sources/bell_1_48.png);
+	width:153px;
+	height:208px;
+	left:72%;
+	top:400px;
+	opacity:0;
+	z-index:110;
+	animation: bellanimation_1_48 2s steps(48)  infinite;
+}
+#bell6{
+	position:fixed;
+	background-image: url(sources/bell_2_69.png);
+	width:212px;
+	height:182px;
+	left:85%;
+	top:250px;
+	opacity:0;
+	z-index:110;
+	animation: bellanimation_2_69 2s steps(69) infinite;
+}
+#bell7{
+	position:fixed;
+	background-image: url(sources/bell_1_59.png);
+    width:153px;
+	height:208px;
+	left:75%;
+	top:30px;
+	opacity:0;
+	z-index:110;
+	animation: bellanimation_1_59 2s steps(59) infinite;
+}
+#bell8{
+	position:fixed;
+	background-image: url(sources/bell_2_89.png);
+	width:212px;
+	height:182px;
+	left:65%;
+	top:200px;
+	opacity:0;
+	z-index:110;
+	animation: bellanimation_2_89 2s steps(89) infinite;
+}
+
+@keyframes bellanimation_1_42 {
+	0%{background-position: 0px;}
+	100%{background-position:-6426px;}
+}
+@keyframes bellanimation_1_48 {
+	0%{background-position: 0px;}
+	100%{background-position:-7344px;}
+}
+@keyframes bellanimation_1_59 {
+	0%{background-position: 0px;}
+	100%{background-position:-9027px;}
+}
+@keyframes bellanimation_2_2-59{
+	0%{background-position: 0px;}
+	100%{background-position:-12508px;}
+}
+@keyframes bellanimation_2_36{
+	0%{background-position: 0px;}
+	100%{background-position:-7632px;}
+}
+@keyframes bellanimation_2_69{
+	0%{background-position: 0px;}
+	100%{background-position:-14628px;}
+}
+@keyframes bellanimation_2_89{
+	0%{background-position: 0px;}
+	100%{background-position:-18868px;}
+}
+
+/*---pages---*/
+#startpage {
+	background: url(sources/0.gif);
+	width: 1366px;
+	height: 1536px;
+	position: fixed;
+	margin-left:-683px;
+	top:0%;
+	left:50%;
+	z-index:100;
+}
+
+#startbutton {
+	position:fixed;
+	background-image:url(sources/btn_start.png);
+	width:189px;
+	height:60px;
+	margin-left:-94.5px;
+	left:50%;
+	top:600px;
+	z-index:120;
+}
+
+@keyframes startanimation {
+	0%{background-position-y: 0px;}
+	100%{background-position-y:-768px;}
+}
+@keyframes startbuttonmove {
+    0%   {top: 600px;}
+    100% {top: -168px;}
+}
+.startanimation {
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+#page2 {
+	background: url(sources/2_2.gif);
+	width: 1366px;
+	height: 768px;
+	position: fixed;
+	margin-left:-683px;
+	top:0%;
+	left:50%;
+	opacity:0;
+	z-index:110;
+}
+
+#page3 {
+	background: url(sources/3.gif);
+	width: 1366px;
+	height: 768px;
+	position: fixed;
+	margin-left:-683px;
+	top:100%;
+	left:50%;
+	opacity:1;
+	z-index:110;
+}
+
+#page4 {
+	background: url(sources/4.gif);
+	width: 1366px;
+	height: 768px;
+	position: fixed;
+	margin-left:-683px;
+	top:100%;
+	left:50%;
+	opacity:1;
+	z-index:110;
+}
+
+#page5 {
+	background: url(sources/5.gif);
+	width: 1366px;
+	height: 768px;
+	position: fixed;
+	margin-left:-683px;
+	top:100%;
+	left:50%;
+	opacity:1;
+	z-index:110;
+}
+
+/*---text---*/
+#text2 {
+	background: url(sources/text_2.png);
+	width: 598px;
+	height: 173px;
+	position: fixed;
+	margin-left:-299px;
+	top:-25%;
+	left:50%;
+	opacity:1;
+	z-index:120;
+}
+#p2 {
+	width: 600px;
+	height: 100px;
+	position: fixed;
+	margin-left:-300px;
+	margin-top:-50px;
+	top:140%;
+	left:50%;
+	z-index:120;
+}
+#mouse1{
+	background: url(sources/mouse.png);
+	width: 22px;
+	height: 42px;
+	position: fixed;
+	margin-left:-11px;
+	top:140%;
+	left:50%;
+	opacity:1;
+	z-index:115;
+}
+
+#text3 {
+	background: url(sources/text_3.png);
+	width: 598px;
+	height: 173px;
+	position: fixed;
+	margin-left:-299px;
+	top:-25%;
+	left:50%;
+	opacity:1;
+	z-index:120;
+}
+#p3 {
+	width: 600px;
+	height: 100px;
+	position: fixed;
+	margin-left:-300px;
+	margin-top:-50px;
+	top:140%;
+	left:50%;
+	z-index:120;
+}
+#keyboard{
+	background:url(sources/keyboard.png);
+	width: 66px;
+	height: 36px;
+	position: fixed;
+	margin-left:-33px;
+	top:140%;
+	left:50%;
+	opacity:1;
+	z-index:115;
+}
+
+
+#text4 {
+	background: url(sources/text_4.png);
+	width: 667px;
+	height: 173px;
+	position: fixed;
+	margin-left:-333.5px;
+	top:-25%;
+	left:50%;
+	opacity:1;
+	z-index:120;
+}
+#p4 {
+	width: 600px;
+	height: 100px;
+	position: fixed;
+	margin-left:-300px;
+	margin-top:-50px;
+	top:140%;
+	left:50%;
+	z-index:120;
+}
+#mouse2{
+	background: url(sources/mouse.png);
+	width: 22px;
+	height: 42px;
+	position: fixed;
+	margin-left:-11px;
+	top:140%;
+	left:50%;
+	opacity:1;
+	z-index:120;
+}
+
+.blanket{
+	background: url(sources/blanket.png);
+	width: 799px;
+	height: 377px;
+	margin-left:-399.5px;
+	opacity:0;
+	top: 500px;
+	left:50%;
+	transition: top 2s;
+	z-index:115;
+	position:fixed;
+}
+
+.blanket:hover
+{
+    top: 420px;
+    transition: top 0.3s;
+}
+
+#text5 {
+	background: url(sources/text_5.png);
+	width: 797px;
+	height: 110px;
+	position: fixed;
+	margin-left:-398.5px;
+	top:-25%;
+	left:50%;
+	opacity:1;
+	z-index:120;
+}
+#p5 {
+	width: 600px;
+	height: 100px;
+	position: fixed;
+	margin-left:-300px;
+	margin-top:-50px;
+	top:-25%;
+	left:50%;
+	z-index:120;
+}
+
+#fb {
+	background: url(sources/facebook.png);
+	width: 33px;
+	height: 33px;
+	position: fixed;
+	margin-left:-16.5px;
+	top:-10%;
+	left:50%;
+	z-index:120;
+}
+
+/*---link---*/
+#link {
+	width: 500px;
+	height: 40px;
+	position: fixed;
+	margin-left:-250px;
+	top:-24%;
+	left:50%;
+	z-index:120;
+	font-size:28px;
+	font-style:italic;
+	text-align:center;
+	letter-spacing: 2px;	
+}
+
+::selection {
+	background: #B0B0B0;
+}
+
+</style>  
+
+<script type="text/javascript">	
+
+
+function init() {
+	
+/*----- start button ------*/
+	document.getElementById("startbutton").onclick = function() {
+		
+	document.getElementById("startpage").className = "startanimation";
+	document.getElementById("startbutton").className = "startanimation";
+	
+	document.getElementById("startpage").style.animationName = "startanimation";
+	document.getElementById("startbutton").style.animationName = "startbuttonmove";
+	}
+	
+/**************bell part***************/
+	document.onkeypress = function(e){	
+	var mykey = e.which;
+		
+if(mykey==49){//1 
+		var image = document.getElementById("bell1"); 
+		document.onkeydown = function(){
+		image.setAttribute('style','-webkit-transform:scale(1.1);' );}
+	    document.onkeyup = function(){
+		image.setAttribute('style','-webkit-transform:scale(1);' );}
+	    document.getElementById("sound-one").play();
+	    document.getElementById("sound-one").volume=0.5;}
+if(mykey==50){//2
+		var image = document.getElementById("bell2"); 
+		document.onkeydown = function(){
+		image.setAttribute('style','-webkit-transform:scale(1.1);' );}
+	    document.onkeyup = function(){
+		image.setAttribute('style','-webkit-transform:scale(1);' );}
+	    document.getElementById("sound-two").play();
+	    document.getElementById("sound-two").volume=0.5;}
+if(mykey==51){//3
+		var image = document.getElementById("bell3"); 
+		document.onkeydown = function(){
+		image.setAttribute('style','-webkit-transform:scale(1.1);' );}
+	    document.onkeyup = function(){
+		image.setAttribute('style','-webkit-transform:scale(1);' );}
+	    document.getElementById("sound-three").play();
+	    document.getElementById("sound-three").volume=0.5;}
+if(mykey==52){//4
+		var image = document.getElementById("bell4"); 
+		document.onkeydown = function(){
+		image.setAttribute('style','-webkit-transform:scale(1.1);' );}
+	    document.onkeyup = function(){
+		image.setAttribute('style','-webkit-transform:scale(1);' );}
+	    document.getElementById("sound-four").play();
+	    document.getElementById("sound-four").volume=0.5;}
+if(mykey==53){//5
+        var image = document.getElementById("bell5"); 
+		document.onkeydown = function(){
+		image.setAttribute('style','-webkit-transform:scale(1.1);' );}
+	    document.onkeyup = function(){
+		image.setAttribute('style','-webkit-transform:scale(1);' );}
+	    document.getElementById("sound-five").play();
+	    document.getElementById("sound-four").volume=0.5;
+		}
+if(mykey==54){//6
+        var image = document.getElementById("bell6"); 
+		document.onkeydown = function(){
+		image.setAttribute('style','-webkit-transform:scale(1.1);' );}
+	    document.onkeyup = function(){
+		image.setAttribute('style','-webkit-transform:scale(1);' );}
+	    document.getElementById("sound-six").play();
+	    document.getElementById("sound-six").volume=0.5;
+		}
+if(mykey==55){//7
+        var image = document.getElementById("bell7"); 
+		document.onkeydown = function(){
+		image.setAttribute('style','-webkit-transform:scale(1.1);' );}
+	    document.onkeyup = function(){
+		image.setAttribute('style','-webkit-transform:scale(1);' );}
+	    document.getElementById("sound-seven").play();
+        document.getElementById("sound-seven").volume=0.5;
+		}
+if(mykey==56){//8
+        var image = document.getElementById("bell8"); 
+		document.onkeydown = function(){
+		image.setAttribute('style','-webkit-transform:scale(1.1);' );}
+	    document.onkeyup = function(){
+		image.setAttribute('style','-webkit-transform:scale(1);' );}
+	    document.getElementById("sound-eight").play();
+	    document.getElementById("sound-eight").volume=0.5;
+		}
+	}
+/*var image1 = document.getElementById("bell1");
+var image2 = document.getElementById("bell2");
+var image3 = document.getElementById("bell3");
+var image4 = document.getElementById("bell4");
+var image5 = document.getElementById("bell5");
+var image6 = document.getElementById("bell6");
+var image7 = document.getElementById("bell7");
+var image8 = document.getElementById("bell8");
+
+document.addEventListener('keydown', doKeyDown, true);
+
+function doKeyDown(e){
+	
+	if(e.keyCode==49){//1 
+		image1.setAttribute('style','-webkit-transform:scale(1.1);' );
+		document.getElementById("sound-one").play();
+	    document.getElementById("sound-one").volume=0.5;
+	}
+	if(e.keyCode==50){//2
+		image2.setAttribute('style','-webkit-transform:scale(1.1);' );
+		document.getElementById("sound-two").play();
+	    document.getElementById("sound-two").volume=0.5;
+	}
+	if(e.keyCode==51){//3
+		image3.setAttribute('style','-webkit-transform:scale(1.1);' );
+		document.getElementById("sound-three").play();
+	    document.getElementById("sound-three").volume=0.5;
+	}
+	if(e.keyCode==52){//4
+		image4.setAttribute('style','-webkit-transform:scale(1.1);' );
+		document.getElementById("sound-four").play();
+	    document.getElementById("sound-four").volume=0.5;
+	}
+	if(e.keyCode==53){//5
+		image5.setAttribute('style','-webkit-transform:scale(1.1);' );
+		document.getElementById("sound-five").play();
+	    document.getElementById("sound-five").volume=0.5;
+	}
+	if(e.keyCode==54){//6 
+		image6.setAttribute('style','-webkit-transform:scale(1.1);' );
+		document.getElementById("sound-six").play();
+	    document.getElementById("sound-six").volume=0.5;
+	}
+	if(e.keyCode==55){//7
+		image7.setAttribute('style','-webkit-transform:scale(1.1);' );
+		document.getElementById("sound-seven").play();
+	    document.getElementById("sound-seven").volume=0.5;
+	}
+	if(e.keyCode==55){//8
+		image8.setAttribute('style','-webkit-transform:scale(1.1);' );
+		document.getElementById("sound-eight").play();
+	    document.getElementById("sound-eight").volume=0.5;
+	}
+}*/
+	
+/**************button_up_down part***************/		
+    document.getElementById("btn1").onclick = function(){
+          document.body.scrollTop =768;
+	}
+	document.getElementById("btn2").onclick = function(){
+		document.body.scrollTop =1536;
+	}	
+	document.getElementById("btn3").onclick = function(){
+		document.body.scrollTop = 2304;
+	}
+	document.getElementById("btn4").onclick = function(){
+		document.body.scrollTop = 3072;
+	}
+	document.getElementById("btn5").onclick = function(){
+		document.body.scrollTop = 3840;
+	}
+
+
+/*----- jarallax ------*/
+	var jarallax = new Jarallax();
+	
+	jarallax.addAnimation('#page2', [
+		{progress:'0%', opacity:'0', top:'0px'}, 
+		{progress:'1%', opacity:'0', top:'0px'},
+		{progress:'2%', opacity:'1', top:'0px'},
+		{progress:'25%', opacity:'1', top:'0px'},
+		{progress:'28%', opacity:'1', top:'-768px'},
+		{progress:'100%', opacity:'1', top:'-768px'}]);
+	
+		jarallax.addAnimation('#text2', [
+			{progress:'0%', top:'-40%'}, 
+			{progress:'3%', top:'-40%'},
+			{progress:'6%', top:'23%'},
+			{progress:'7%', top:'23%'},
+			{progress:'12%', top:'20%'},
+			{progress:'25%', top:'20%'},
+			{progress:'27%', top:'-30%'},
+			{progress:'100%', top:'-30%'}]);
+		jarallax.addAnimation('#p2', [
+			{progress:'0%', opacity:'0', top:'83%'}, 
+			{progress:'2%', opacity:'0', top:'83%'},
+			{progress:'3%', opacity:'1', top:'83%'},
+			{progress:'25%', opacity:'1', top:'83%'},
+			{progress:'27%', opacity:'1', top:'143%'},
+			{progress:'100%', opacity:'1', top:'143%'}]);
+		jarallax.addAnimation('#mouse1', [
+			{progress:'0%', opacity:'0', top:'83%'}, 
+			{progress:'2%', opacity:'0', top:'83%'},
+			{progress:'3%', opacity:'1', top:'83%'},
+			{progress:'25%', opacity:'1', top:'83%'},
+			{progress:'27%', opacity:'1', top:'140%'},
+			{progress:'100%', opacity:'1', top:'140%'}]);
+			
+	jarallax.addAnimation('#page3', [
+		{progress:'0%', top:'768px'}, 
+		{progress:'25%', top:'768px'},
+		{progress:'28%', top:'0px'},
+		{progress:'50%', top:'0px'},
+		{progress:'53%', top:'-768px'},
+		{progress:'100%', top:'-768px'}]);
+		
+		jarallax.addAnimation('#text3', [
+			{progress:'0%', top:'-47%'}, 
+			{progress:'26%', top:'-47%'},
+			{progress:'30%', top:'13%'},
+			{progress:'31%', top:'13%'},
+			{progress:'36%', top:'10%'},
+			{progress:'50%', top:'10%'},
+			{progress:'52%', top:'-25%'},
+			{progress:'100%', top:'-25%'}]);	
+		jarallax.addAnimation('#p3', [
+			{progress:'0%', top:'140%'}, 
+			{progress:'26%', top:'140%'},
+			{progress:'30%', top:'83%'},
+			{progress:'31%', top:'80%'},
+			{progress:'50%', top:'80%'},
+			{progress:'52%', top:'140%'},
+			{progress:'100%', top:'140%'}]);
+		jarallax.addAnimation('#keyboard', [
+			{progress:'0%', top:'140%'}, 
+			{progress:'26%', top:'140%'},
+			{progress:'30%', top:'83%'},
+			{progress:'31%', top:'80%'},
+			{progress:'50%', top:'80%'},
+			{progress:'52%', top:'140%'},
+			{progress:'100%', top:'140%'}]);
+		
+	jarallax.addAnimation('#page4', [
+		{progress:'0%', top:'768px'},
+		{progress:'50%', top:'768px'},
+		{progress:'53%', top:'0px'},
+		{progress:'75%', top:'0px'},
+		{progress:'78%', top:'-768px'},
+		{progress:'100%', top:'-768px'}]);
+		
+		jarallax.addAnimation('#text4', [
+			{progress:'0%', top:'-47%'}, 
+			{progress:'51%', top:'-47%'},
+			{progress:'55%', top:'13%'},
+			{progress:'56%', top:'13%'},
+			{progress:'61%', top:'10%'},
+			{progress:'75%', top:'10%'},
+			{progress:'77%', top:'-30%'},
+			{progress:'100%', top:'-30%'}]);
+		jarallax.addAnimation('#p4', [
+			{progress:'0%', top:'140%'}, 
+			{progress:'51%', top:'140%'},
+			{progress:'55%', top:'83%'},
+			{progress:'56%', top:'80%'},
+			{progress:'75%', top:'80%'},
+			{progress:'77%', top:'140%'},
+			{progress:'100%', top:'140%'}]);
+		jarallax.addAnimation('.blanket', [
+			{progress:'0%', opacity:'0'}, 
+			{progress:'51%', opacity:'0'},
+			{progress:'55%', opacity:'0'},
+			{progress:'56%', opacity:'1'},
+			{progress:'75%', opacity:'1'},
+			{progress:'77%', opacity:'0'},
+			{progress:'100%', opacity:'0'}]);
+		jarallax.addAnimation('#mouse2', [
+			{progress:'0%', top:'140%'}, 
+			{progress:'51%', top:'140%'},
+			{progress:'55%', top:'83%'},
+			{progress:'56%', top:'80%'},
+			{progress:'75%', top:'80%'},
+			{progress:'77%', top:'140%'},
+			{progress:'100%', top:'140%'}]);
+		
+	jarallax.addAnimation('#page5', [
+		{progress:'0%', top:'768px'},
+		{progress:'75%', top:'768px'},
+		{progress:'78%', top:'0px'},
+		{progress:'100%', top:'0px'}]);
+		
+		jarallax.addAnimation('#text5', [
+			{progress:'0%', top:'-47%'}, 
+			{progress:'76%', top:'-47%'},
+			{progress:'80%', top:'13%'},
+			{progress:'81%', top:'13%'},
+			{progress:'86%', top:'10%'},
+			{progress:'100%', top:'10%'}]);
+		jarallax.addAnimation('#p5', [
+			{progress:'0%', top:'-25%'}, 
+			{progress:'76%', top:'-25%'},
+			{progress:'80%', top:'35%'},
+			{progress:'81%', top:'35%'},
+			{progress:'86%', top:'32%'},
+			{progress:'100%', top:'32%'}]);	
+		jarallax.addAnimation('#link', [
+			{progress:'0%', top:'-24%'}, 
+			{progress:'76%', top:'-24%'},
+			{progress:'80%', top:'36%'},
+			{progress:'81%', top:'36%'},
+			{progress:'86%', top:'33%'},
+			{progress:'100%', top:'33%'}]);
+		jarallax.addAnimation('#fb', [
+			{progress:'0%', top:'-10%'}, 
+			{progress:'76%', top:'-10%'},
+			{progress:'80%', top:'50%'},
+			{progress:'81%', top:'50%'},
+			{progress:'86%', top:'47%'},
+			{progress:'100%', top:'47%'}]);		
+			
+		jarallax.addAnimation('#btn6', [
+		{progress:'0%', opacity:'1'},
+		{progress:'1%', opacity:'1'},
+		{progress:'2%', opacity:'0'},
+		{progress:'100%', opacity:'0'}]);
+		
+			
+		jarallax.addAnimation('#btn7', [
+		{progress:'0%', opacity:'0'},
+		{progress:'1%', opacity:'0'},
+		{progress:'2%', opacity:'1'},
+		{progress:'25%', opacity:'1'},
+		{progress:'28%', opacity:'0'},
+		{progress:'100%', opacity:'0'}]);
+		
+		jarallax.addAnimation('#btn8', [
+		{progress:'0%', opacity:'0'},
+		{progress:'25%', opacity:'0'},
+		{progress:'28%', opacity:'1'},
+		{progress:'50%', opacity:'1'},
+		{progress:'53%', opacity:'0'},
+		{progress:'100%', opacity:'0'}]);
+		
+		jarallax.addAnimation('#btn9', [
+		{progress:'0%', opacity:'0'},
+		{progress:'50%', opacity:'0'},
+		{progress:'53%', opacity:'1'},
+		{progress:'75%', opacity:'1'},
+		{progress:'78%', opacity:'0'},
+		{progress:'100%', opacity:'0'}]);
+		
+		jarallax.addAnimation('#btn10', [
+		{progress:'0%', opacity:'0'},
+		{progress:'75%', opacity:'0'},
+		{progress:'78%', opacity:'1'},
+		{progress:'100%', opacity:'1'}]);
+		
+		jarallax.addAnimation('#startbutton', [
+		{progress:'0%', top:'600px'},
+		{progress:'1%', top:'600px'},
+		{progress:'4%', top:'800px'},
+		{progress:'100%', top:'800px'}]);
+		
+				jarallax.addAnimation('#bell1', [
+	    {progress:'0%', left:'5%', top:'20px', opacity:0}, 
+		{progress:'25%', left:'5%', top:'20px', opacity:0}, 
+		{progress:'28%', left:'5%', top:'20px', opacity:100}, 
+		{progress:'50%', left:'5%', top:'20px',opacity:100},
+		{progress:'53%', left:'5%', top:'20px', opacity:0},  
+		{progress:'100%', left:'5%', top:'20px', opacity:0}]);
+	
+	jarallax.addAnimation('#bell2', [
+	    {progress:'0%', left:'20%', top:'150px', opacity:0}, 
+		{progress:'25%', left:'20%', top:'150px', opacity:0}, 
+		{progress:'28%', left:'20%', top:'150px', opacity:100}, 
+		{progress:'50%', left:'20%', top:'150px',opacity:100},
+		{progress:'53%',left:'20%', top:'150px', opacity:0},  
+		{progress:'100%',left:'20%', top:'150px',opacity:0}]);
+	
+	jarallax.addAnimation('#bell3', [
+	    {progress:'0%', left:'0%',top:'250px', opacity:0}, 
+		{progress:'25%', left:'0%',top:'250px',opacity:0}, 
+		{progress:'28%', left:'0%',top:'250px', opacity:100}, 
+		{progress:'50%', left:'0%',top:'250px',opacity:100},
+		{progress:'53%', left:'0%',top:'250px', opacity:0},  
+		{progress:'100%', left:'0%',top:'250px',opacity:0}]);
+	
+	jarallax.addAnimation('#bell4', [
+	    {progress:'0%', left:'15%', top:'400px', opacity:0}, 
+		{progress:'25%', left:'15%', top:'400px', opacity:0}, 
+		{progress:'28%', left:'15%', top:'400px', opacity:100}, 
+		{progress:'50%', left:'15%', top:'400px',opacity:100},
+		{progress:'53%', left:'15%', top:'400px', opacity:0},  
+		{progress:'100%', left:'15%', top:'400px', opacity:0}]);
+	
+	jarallax.addAnimation('#bell5', [
+	    {progress:'0%', left:'72%', top:'400px', opacity:0}, 
+		{progress:'25%', left:'72%', top:'400px', opacity:0}, 
+		{progress:'28%', left:'72%', top:'400px', opacity:100}, 
+		{progress:'50%', left:'72%', top:'400px',opacity:100},
+		{progress:'53%', left:'72%', top:'400px', opacity:0},  
+		{progress:'100%', left:'72%', top:'400px', opacity:0}]);
+	
+	jarallax.addAnimation('#bell6', [
+	    {progress:'0%', left:'85%', top:'250px', opacity:0}, 
+		{progress:'25%', left:'85%', top:'250px', opacity:0}, 
+		{progress:'28%', left:'85%', top:'250px', opacity:100}, 
+		{progress:'50%', left:'85%', top:'250px',opacity:100},
+		{progress:'53%', left:'85%', top:'250px', opacity:0},  
+		{progress:'100%', left:'85%', top:'250px', opacity:0}]);
+	
+	jarallax.addAnimation('#bell7', [
+	    {progress:'0%', left:'75%', top:'30px', opacity:0}, 
+		{progress:'25%', left:'75%', top:'30px', opacity:0}, 
+		{progress:'28%', left:'75%', top:'30px', opacity:100}, 
+		{progress:'50%', left:'75%', top:'30px',opacity:100},
+		{progress:'53%', left:'75%', top:'30px', opacity:0},  
+		{progress:'100%', left:'75%', top:'30px', opacity:0}]);
+	
+	jarallax.addAnimation('#bell8', [
+	    {progress:'0%', left:'65%', top:'200px', opacity:0}, 
+		{progress:'25%', left:'65%', top:'200px', opacity:0}, 
+		{progress:'28%', left:'65%', top:'200px', opacity:100}, 
+		{progress:'50%', left:'65%', top:'200px',opacity:100},
+		{progress:'53%', left:'65%', top:'200px', opacity:0},  
+		{progress:'100%', left:'65%', top:'200px', opacity:0}]);
+	
+}
+
+</script>
+    
+    
+</head>
+
+<body onload="init()">
+
+<audio id="sound-one" src="sound/Bell_1.mp3"></audio>
+<audio id="sound-two" src="sound/Bell_2.mp3"></audio>
+<audio id="sound-three" src="sound/Bell_3.mp3"></audio>
+<audio id="sound-four" src="sound/Bell_4.mp3"></audio>
+<audio id="sound-five" src="sound/Bell_5.mp3"></audio>
+<audio id="sound-six" src="sound/Bell_6.mp3"></audio>
+<audio id="sound-seven" src="sound/Bell_7.mp3"></audio>
+<audio id="sound-eight" src="sound/Bell_8.mp3"></audio>
+	
+<div id="bg"></div>
+
+<div id="buttonUp"></div>
+<div id="buttonDown"></div>
+    
+<div id="startbutton"></div>
+
+<div id="startpage"></div>
+<div id="page2"></div>
+<div id="page3"></div>
+<div id="page4"></div>
+<div id="page5"></div>
+
+<div id="btn1"></div>
+<div id="btn2"></div>
+<div id="btn3"></div>
+<div id="btn4"></div>
+<div id="btn5"></div>
+<div id="btn6"></div>
+<div id="btn7"></div>
+<div id="btn8"></div>
+<div id="btn9"></div>
+<div id="btn10"></div>
+
+<div id="text2"></div>
+<div id="text3"></div>
+<div id="text4"></div>
+<div id="text5"></div>
+
+<div id="bell1"></div>
+<div id="bell2"></div>
+<div id="bell3"></div>
+<div id="bell4"></div>
+<div id="bell5"></div>
+<div id="bell6"></div>
+<div id="bell7"></div>
+<div id="bell8"></div>
+
+<div id="mouse1"></div>
+<div id="p3"><p>press the keyboard 1-8</p></div>
+<div id="keyboard"></div>
+<div id="p4"><p>move your cursor over the blankat</p></div>
+<div id="blanket_s"></div>
+<div class="blanket"></div>
+<div id="mouse2"></div>
+<div id="p5"><p>share link with friends:<br/><br/><br/><br/><br/><br/>share with facebook:</p></div>
+<input type="text" id="link" name="Link" value="http://herecomessantaclaus.com">
+<a href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank"><sources src="sources/facebook.png" id="fb"></a>
+
+//<div id="snow"><video src="sources/snow.mov" autoplay loop></video></div>
+
+<div id="snow2"></div>
+    
+<div id="bell"></div>  
+  
+<div id="bgsources"></div>
+    
+<audio id="bgmusic" src="sound/Here Comes Santa Claus (Instrumental).mp3" autoplay loop></audio>
+
+</body>
+</html>
